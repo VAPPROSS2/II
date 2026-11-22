@@ -12,7 +12,13 @@
 - `show_results.py` — просмотр результатов в терминале;
 - `Отчет_ЛР2_NLP.docx` — отчёт;
 - `screenshots/` — скриншоты выполнения в VS Code;
-- `artifacts/bert_tiny_sst2/` — конфигурация, токенизатор и сохранённая модель BERT-tiny.
+- `artifacts/bert_tiny_sst2/` — конфигурация, токенизатор и сохранённые веса BERT-tiny.
+
+Веса модели представлены последовательными файлами `model.safetensors.part00` … `model.safetensors.part11`. После клонирования восстановите единый файл командой:
+
+```powershell
+py -3.11 lab2/artifacts/bert_tiny_sst2/rebuild_model.py
+```
 
 ## Запуск
 
@@ -29,6 +35,7 @@ py -3.11 -u lab02.py --only-transformer
 ```
 
 Результаты сохраняются в `lab02_results.json`. Для просмотра:
+
 ```powershell
 py -3.11 show_results.py --section 1
 py -3.11 show_results.py --section 2
