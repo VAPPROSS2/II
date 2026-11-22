@@ -228,7 +228,7 @@ add_table(
     [[k.replace("validation_", "").upper(), f"{v:.4f}"]
      for k, v in metrics.items()
      if k in ["validation_accuracy", "validation_f1", "validation_loss"]],
-    10
+    14
 )
 paragraph("Метрики независимой тестовой выборки:", bold=True)
 add_table(
@@ -236,7 +236,7 @@ add_table(
     [[k.replace("test_", "").upper(), f"{v:.4f}"]
      for k, v in metrics.items()
      if k in ["test_accuracy", "test_f1", "test_loss"]],
-    10
+    14
 )
 paragraph("Примечание: в GLUE/SST-2 метки официального test split не опубликованы; поэтому в роли независимой тестовой выборки использован размеченный официальный validation split датасета. " + r.get("test_split_description", ""))
 heading("Инференс на произвольных предложениях", 2)
@@ -245,7 +245,7 @@ add_table(
     [[x["text"], x["prediction"],
       str({k: round(v, 3) for k, v in x["probabilities"].items()})]
      for x in r.get("predictions", [])],
-    9
+    14
 )
 paragraph("Анализ: " + r.get("analysis", ""))
 
