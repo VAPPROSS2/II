@@ -1,0 +1,9 @@
+{
+  "cls_token": "[CLS]",
+  "mask_token": "[MASK]",
+  "pad_token": "[PAD]",
+  "sep_token": "[SEP]",
+  "unk_token": "[UNK]"
+}
+
+[executed on device: HOME-PC (e6e0ac5b-fa1d-4b2a-ae2e-d82fd4bf130e)]

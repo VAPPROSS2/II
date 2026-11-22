@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+.upload_b64/
+artifacts/bert_tiny_checkpoints/
+*.log
