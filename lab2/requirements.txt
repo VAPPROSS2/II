@@ -12,6 +12,3 @@ numpy<2
 python-docx>=1.1
 reportlab>=4.0
 matplotlib>=3.8
-
-
-[executed on device: HOME-PC (e6e0ac5b-fa1d-4b2a-ae2e-d82fd4bf130e)]

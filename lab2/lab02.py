@@ -2,7 +2,7 @@
 """
 Лабораторная работа №2. Решение задач NLP.
 Запуск: python lab02.py
-Полный запуск включает fine-tuning DistilBERT (загрузка датасета/модели из Hugging Face).
+Полный запуск включает fine-tuning BERT-tiny (загрузка датасета/модели из Hugging Face).
 Для локальной проверки заданий 1–9: python lab02.py --skip-transformer
 """
 from __future__ import annotations
@@ -488,9 +488,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
-
-
-[executed on device: HOME-PC (e6e0ac5b-fa1d-4b2a-ae2e-d82fd4bf130e)]

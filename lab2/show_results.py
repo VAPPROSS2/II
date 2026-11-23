@@ -64,6 +64,3 @@ elif s == "3":
     for x in r["predictions"]:
         print(x["prediction"],{k:round(v,3) for k,v in x["probabilities"].items()},"|",x["text"])
     print("Модель сохранена в artifacts/bert_tiny_sst2")
-
-
-[executed on device: HOME-PC (e6e0ac5b-fa1d-4b2a-ae2e-d82fd4bf130e)]
